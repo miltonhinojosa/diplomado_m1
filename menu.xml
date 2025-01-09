@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+    <opcion>
+        <nombre es="Inicio" en="Home">Inicio</nombre>
+    </opcion>
+    <opcion>
+        <nombre es="Participar" en="Participate">Participar</nombre>
+    </opcion>
+    <opcion>
+        <nombre es="Resultados Generales" en="General Results">Resultados Generales</nombre>
+    </opcion>
+    <opcion>
+        <nombre es="Tips Saludables" en="Healthy Tips">Tips Saludables</nombre>
+    </opcion>
+    <opcion>
+        <nombre es="Foro de Usuarios" en="User Forum">Foro de Usuarios</nombre>
+    </opcion>
+    <opcion>
+        <nombre es="Recursos Adicionales" en="Additional Resources">Recursos Adicionales</nombre>
+    </opcion>
+    <opcion>
+        <nombre es="FAQ y Soporte" en="FAQ and Support">FAQ and Soporte</nombre>
+    </opcion>
+    <opcion>
+        <nombre es="Contacto" en="Contact">Contacto</nombre>
+    </opcion>
+</menu>
+

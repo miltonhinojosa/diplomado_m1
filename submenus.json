@@ -1,0 +1,50 @@
+{
+    "Inicio": [
+        {"nombre": "Objetivo de la encuesta", "nombre_en": "Survey Objective ", "enlace": "index.html"},
+        {"nombre": "Beneficios de participar", "nombre_en": "Benefits of Participating", "enlace": "#noticias"},
+        {"nombre": "Información de privacidad", "nombre_en": "Privacy Information", "enlace": "#eventos"},
+        {"nombre": "Preguntas frecuentes", "nombre_en": "Frequently Asked Questions", "enlace": "#galeria"}
+    ],
+    "Participar": [
+        {"nombre": "Formulario de encuesta", "nombre_en": "Survey form", "enlace": "formulario.html"},
+        {"nombre": "Selección de categorías", "nombre_en": "Category selection", "enlace": "#instrucciones"},
+        {"nombre": "Confirmación de respuestas", "nombre_en": "Confirmation of answers", "enlace": "#actividades"},
+        {"nombre": "Generación de resultados", "nombre_en": "Generation of results", "enlace": "#recompensas"}
+    ],
+    "Resultados Generales": [
+        {"nombre": "Estadísticas globales", "nombre_en": "Global Statistics", "enlace": "estadisticas.html"},
+        {"nombre": "Gráficos interactivos", "nombre_en": "Interactive Charts", "enlace": "#ranking"},
+        {"nombre": "Comparación por género/edad", "nombre_en": "Gender/Age Comparison", "enlace": "#informes"},
+        {"nombre": "Tendencias actuales", "nombre_en": "Current Trends", "enlace": "#historias"}
+    ],
+    "Tips Saludables": [
+        {"nombre": "Ejercicios recomendados", "nombre_en": "Recommended exercises", "enlace": "ejercicios.html"},
+        {"nombre": "Rutinas básicas", "nombre_en": "Basic routines", "enlace": "#ejercicio"},
+        {"nombre": "Nutrición complementaria ", "nombre_en": "Complementary nutrition", "enlace": "#descanso"},
+        {"nombre": "Videos tutoriales", "nombre_en": "Tutorial videos", "enlace": "#hidratacion"}
+    ],
+    "Foro de Usuarios": [
+        {"nombre": "Experiencias compartidas", "nombre_en": "Shared experiences", "enlace": "experiencias.html"},
+        {"nombre": "Retos grupales", "nombre_en": "Group challenges", "enlace": "#preguntas"},
+        {"nombre": "Sugerencias de actividades", "nombre_en": "Activity suggestions", "enlace": "#sugerencias"},
+        {"nombre": "Redes sociales de salud", "nombre_en": "Social health networks", "enlace": "#reportes"}
+    ],
+    "Recursos Adicionales": [
+        {"nombre": "Descarga de planes", "nombre_en": "Download plans", "enlace": "descarga.html"},
+        {"nombre": "Listado de gimnasios", "nombre_en": "List of gyms", "enlace": "#videos"},
+        {"nombre": "Aplicaciones recomendadas", "nombre_en": "Recommended apps", "enlace": "#libros"},
+        {"nombre": "Eventos deportivos locales", "nombre_en": "Local sporting events", "enlace": "#herramientas"}
+    ],
+    "FAQ y Soporte": [
+        {"nombre": "Privacidad de datos", "nombre_en": "Data privacy", "enlace": "privacidad.html"},
+        {"nombre": "Cómo modificar respuestas", "nombre_en": "How to modify answers", "enlace": "#soporte"},
+        {"nombre": "Contactar a soporte", "nombre_en": "Contact support", "enlace": "#politicas"},
+        {"nombre": "Reportar problemas", "nombre_en": "Report problems", "enlace": "#ayuda"}
+    ],
+    "Contacto": [
+        {"nombre": "Soporte técnico", "nombre_en": "Technical support", "enlace": "soporte.html"},
+        {"nombre": "Redes sociales", "nombre_en": "Social networks", "enlace": "#mapa"},
+        {"nombre": "Feedback", "nombre_en": "Feedback", "enlace": "#telefono"},
+        {"nombre": "Boletín informativo", "nombre_en": "Newsletter", "enlace": "#correo"}
+    ]
+}

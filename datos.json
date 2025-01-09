@@ -1,0 +1,59 @@
+[
+    {
+        "nombre": "María López",
+        "edad": 34,
+        "frecuencia": "semanal",
+        "tipo": "Natación",
+        "duracion": 45,
+        "dificultad": "alta"
+    },
+    {
+        "nombre": "Pedro Ramírez",
+        "edad": 29,
+        "frecuencia": "semanal",
+        "tipo": "Gimnasio",
+        "duracion": 90,
+        "dificultad": "alta"
+    },
+    {
+        "nombre": "Ana Gómez",
+        "edad": 37,
+        "frecuencia": "ocasional",
+        "tipo": "Baile",
+        "duracion": 40,
+        "dificultad": "baja"
+    },
+    {
+        "nombre": "Miguel Torres",
+        "edad": 33,
+        "frecuencia": "diario",
+        "tipo": "Correr",
+        "duracion": 50,
+        "dificultad": "media"
+    },
+    {
+        "nombre": "Laura Sánchez",
+        "edad": 30,
+        "frecuencia": "semanal",
+        "tipo": "Senderismo",
+        "duracion": 120,
+        "dificultad": "alta"
+    },
+    {
+        "nombre": "José Ruiz",
+        "edad": 45,
+        "frecuencia": "ocasional",
+        "tipo": "Pesas",
+        "duracion": 35,
+        "dificultad": "media"
+    },
+    {
+        "nombre": "Sofía Morales",
+        "edad": 22,
+        "frecuencia": "diario",
+        "tipo": "Pilates",
+        "duracion": 25,
+        "dificultad": "baja"
+    }
+]
+

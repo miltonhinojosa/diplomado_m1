@@ -1,0 +1,149 @@
+/* Estilos básicos */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: rgb(9,121,44);
+    background: linear-gradient(0deg, rgb(1, 172, 55) 0%, rgba(0,0,0,1) 97%);
+}
+
+/* Menú principal */
+#menu-principal {
+    background-color: #8076a3;
+    padding: 10px 0;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu li {
+    position: relative;
+}
+
+#menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 15px;
+    display: block;
+}
+
+#menu a:hover {
+    background-color: #067d00;
+    border-radius: 5px;
+}
+
+/* Submenús */
+#menu li ul {
+    display: none;
+    position: absolute;
+    background-color: #067d00;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    top: 100%;
+    left: 0;
+}
+
+#menu li:hover ul {
+    display: block;
+}
+
+#menu li ul li a {
+    padding: 10px;
+    white-space: nowrap;
+}
+
+#menu li ul li a:hover {
+    background-color: #1bb413;
+}
+
+/* Contenido principal */
+.contenidoprincipal{
+    width: 94%; /* Ajusta el ancho según necesites */
+    background-color: rgba(255, 255, 255, 0.6); /* Fondo transparente */
+    padding: 10px;
+    border-radius: 6px; /* Bordes redondeados opcionales */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar el div */
+    text-align: center;
+}
+#contenido {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#contenido h1 {
+    font-size: 2.5em;
+}
+
+#contenido p {
+    font-size: 1.2em;
+}
+.bg-white-transparent {
+    background-color: rgba(255, 255, 255, 0.6); /* Fondo transparente */
+    border-radius: 8px;
+    padding: 10px;
+    margin: 45px 10px 10px 5px;
+    flex: auto;
+}
+
+.cajas {
+    background-color: rgba(255, 255, 255, 0.6); /* Fondo transparente */
+    border-radius: 8px;
+    margin: 15px 5px 5px 5px;
+    flex: auto;
+}
+
+section {
+    border-radius: 6px;
+    background-color: #1bb413;
+    height: auto;
+}
+
+h2 {
+    color: #fff;
+    font-size: 1.7em;
+    padding: 10px;
+    font-weight: 900;
+    text-align: center;
+}
+p {
+    color: #fff;
+    font-size: 1em;
+    padding: 10px;
+    text-align: justify;
+}
+/* Responsividad */
+@media (max-width: 768px) {
+    #menu {
+        flex-direction: column;
+    }
+
+    #menu a {
+        text-align: center;
+    }
+
+    #traduccion {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    #traduccion button {
+        margin: 5px 0;
+    }
+}
+/* CSS Code */
+.swiper-wrapper {
+    width: 100%;
+    height: max-content !important;
+    padding-bottom: 64px !important;
+    -webkit-transition-timing-function: linear !important;
+    transition-timing-function: linear !important;
+    position: relative;
+}
+.swiper-pagination-bullet {
+    background: #4f46e5;
+}
