@@ -44,87 +44,84 @@
             </div>
         </nav>
 
-        <!-- Contenido principal -->
         <div id="contenido" class="container py-1">
             <div class="row g-5">
-                <!-- Formulario de encuesta -->
                 <div class="col-md-3 bg-white-transparent p-3">
-                    <h2 class="mb-4">Encuesta de Hábitos de Ejercicio</h2>
+                    <h2 class="mb-4" data-translate-key="encuestaTitulo">Encuesta de Hábitos de Ejercicio</h2>
                     <form id="encuesta-form" novalidate>
                         <div class="row">
                             <div class="col-md-8">
-                                <label for="nombre" class="form-label">Nombre:</label>
+                                <label for="nombre" class="form-label" data-translate-key="nombreLabel">Nombre:</label>
                                 <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Tu nombre" required>
                                 <div class="error-message text-danger d-none">Por favor, ingresa tu nombre.</div>
                             </div>
                             <div class="col-md-4">
-                                <label for="edad" class="form-label">Edad:</label>
+                                <label for="edad" class="form-label" data-translate-key="edadLabel">Edad:</label>
                                 <input id="edad" name="edad" class="form-control" placeholder="Tu edad" required>
                                 <div class="error-message text-danger d-none">Por favor, ingresa una edad válida.</div>
                             </div>
                         </div>
                         <div class="mb-2">
-                            <label for="frecuencia" class="form-label">¿Con qué frecuencia haces ejercicio?</label>
+                            <label for="frecuencia" class="form-label" data-translate-key="frecuenciaLabel">¿Con qué frecuencia haces ejercicio?</label>
                             <select id="frecuencia" name="frecuencia" class="form-select" required>
-                                <option value="">Selecciona una opción</option>
-                                <option value="diario">Diario</option>
-                                <option value="semanal">Varias veces a la semana</option>
-                                <option value="ocasional">Ocasionalmente</option>
-                                <option value="nunca">Nunca</option>
+                                <option value="" data-translate-key="frecuenciaDefault">Selecciona una opción</option>
+                                <option value="diario" data-translate-key="frecuenciaDiario">Diario</option>
+                                <option value="semanal" data-translate-key="frecuenciaSemanal">Varias veces a la semana</option>
+                                <option value="ocasional" data-translate-key="frecuenciaOcasional">Ocasionalmente</option>
+                                <option value="nunca" data-translate-key="frecuenciaNunca">Nunca</option>
                             </select>
                             <div class="error-message text-danger d-none">Por favor, selecciona una frecuencia.</div>
                         </div>
                         <div class="mb-2">
-                            <label for="tipo-ejercicio" class="form-label">¿Qué tipo de ejercicio prefieres?</label>
+                            <label for="tipo-ejercicio" class="form-label" data-translate-key="tipoEjercicioLabel">¿Qué tipo de ejercicio prefieres?</label>
                             <input type="text" id="tipo-ejercicio" name="tipo-ejercicio" class="form-control" placeholder="Ejemplo: correr, nadar, gimnasio" required>
                             <div class="error-message text-danger d-none">Por favor, ingresa un tipo de ejercicio.</div>
                         </div>
                         <div class="mb-2">
-                            <label for="duracion" class="form-label">¿Cuánto tiempo dedicas al ejercicio (en minutos)?</label>
+                            <label for="duracion" class="form-label" data-translate-key="duracionLabel">¿Cuánto tiempo dedicas al ejercicio (en minutos)?</label>
                             <input type="number" id="duracion" name="duracion" class="form-control" placeholder="Ejemplo: 30" required>
                             <div class="error-message text-danger d-none">Por favor, ingresa una duración válida.</div>
                         </div>
                         <div class="mb-2">
-                            <label for="dificultad" class="form-label">¿Cómo consideras el nivel de dificultad de tu ejercicio?</label>
+                            <label for="dificultad" class="form-label" data-translate-key="dificultadLabel">¿Cómo consideras el nivel de dificultad de tu ejercicio?</label>
                             <select id="dificultad" name="dificultad" class="form-select" required>
-                                <option value="">Selecciona una opción</option>
-                                <option value="baja">Baja</option>
-                                <option value="media">Media</option>
-                                <option value="alta">Alta</option>
+                                <option value="" data-translate-key="dificultadDefault">Selecciona una opción</option>
+                                <option value="baja" data-translate-key="dificultadBaja">Baja</option>
+                                <option value="media" data-translate-key="dificultadMedia">Media</option>
+                                <option value="alta" data-translate-key="dificultadAlta">Alta</option>
                             </select>
                             <div class="error-message text-danger d-none">Por favor, selecciona un nivel de dificultad.</div>
                         </div>
-                        <button type="submit" class="btn btn-success">Enviar</button>
+                        <button type="submit" class="btn btn-success" data-translate-key="enviarBoton">Enviar</button>
                     </form>
                 </div>
-
-                <!-- Resultados de la encuesta -->
+        
                 <div class="col-md-8 bg-white-transparent p-3">
-                    <h2 class="mb-4">Resultados de la Encuesta</h2>
+                    <h2 class="mb-4" data-translate-key="resultadosTitulo">Resultados de la Encuesta</h2>
                     <div id="resultados-crud" class="p-3 border rounded">
                         <table class="table table-bordered table-striped">
                             <thead>
                                 <tr>
-                                    <th>Nombre</th>
-                                    <th>Edad</th>
-                                    <th>Frecuencia</th>
-                                    <th>Tipo</th>
-                                    <th>Duración</th>
-                                    <th>Dificultad</th>
-                                    <th>Acciones</th>
+                                    <th data-translate-key="tablaNombre">Nombre</th>
+                                    <th data-translate-key="tablaEdad">Edad</th>
+                                    <th data-translate-key="tablaFrecuencia">Frecuencia</th>
+                                    <th data-translate-key="tablaTipo">Tipo</th>
+                                    <th data-translate-key="tablaDuracion">Duración</th>
+                                    <th data-translate-key="tablaDificultad">Dificultad</th>
+                                    <th data-translate-key="tablaAcciones">Acciones</th>
                                 </tr>
                             </thead>
                             <tbody id="tabla-resultados">
-                                <!-- Filas dinámicas -->
+                                <!-- carga -->
                             </tbody>
                         </table>
                     </div>
-                </div>            
+                </div>
             </div>
-        </div>
+        </div>        
     </div>
     <footer class="text-white text-center py-3" style="background-color: #067d00;">
-        <p class="mb-0">&copy; 2025 HABBiTOS FITNESS. Todos los derechos reservados.</p>
+        <p class="mb-0 text-center">&copy; 2025 HABBiTOS FITNESS. Todos los derechos reservados Dardo Milton Hinojosa.</p>
     </footer>
 </body>
 </html>

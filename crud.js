@@ -2,9 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const formulario = document.getElementById('encuesta-form');
     const tablaResultados = document.getElementById('tabla-resultados');
     let datosEncuesta = [];
-    let indiceEdicion = null; // Índice del registro que se está editando
+    let indiceEdicion = null;
 
-    // Leer datos iniciales desde datos.json
     async function cargarDatos() {
         try {
             const respuesta = await fetch('datos.json');
@@ -15,12 +14,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Simular guardado de datos
     function guardarDatosSimulado() {
         console.log('Datos guardados localmente (simulación):', JSON.stringify(datosEncuesta, null, 2));
     }
 
-    // Renderizar tabla
     function renderizarTabla() {
         tablaResultados.innerHTML = '';
         datosEncuesta.forEach((dato, index) => {
@@ -41,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Validar formulario
+    // validar
     function validarCampos() {
         let esValido = true;
         const campos = formulario.querySelectorAll('input, select');
@@ -60,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return esValido;
     }
 
-    // Crear o actualizar registro
+    // insetar
     formulario.addEventListener('submit', (e) => {
         e.preventDefault();
 
@@ -78,25 +75,25 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         if (indiceEdicion !== null) {
-            datosEncuesta[indiceEdicion] = nuevoRegistro; // Actualizar registro existente
-            indiceEdicion = null; // Limpiar estado de edición
+            datosEncuesta[indiceEdicion] = nuevoRegistro;
+            indiceEdicion = null; 
         } else {
-            datosEncuesta.push(nuevoRegistro); // Crear nuevo registro
+            datosEncuesta.push(nuevoRegistro); 
         }
 
         renderizarTabla();
-        guardarDatosSimulado(); // Simular guardado
+        guardarDatosSimulado();
         formulario.reset();
     });
 
-    // Eliminar registro
+    // eliminar
     window.eliminarRegistro = (index) => {
         datosEncuesta.splice(index, 1);
         renderizarTabla();
-        guardarDatosSimulado(); // Simular guardado
+        guardarDatosSimulado();
     };
 
-    // Editar registro
+    // editar
     window.editarRegistro = (index) => {
         const registro = datosEncuesta[index];
         formulario.nombre.value = registro.nombre;
@@ -106,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
         formulario.duracion.value = registro.duracion;
         formulario.dificultad.value = registro.dificultad;
 
-        indiceEdicion = index; // Establecer índice para actualizar el registro en el futuro
+        indiceEdicion = index;
     };
 
     cargarDatos();

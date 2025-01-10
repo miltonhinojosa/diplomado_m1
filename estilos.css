@@ -1,4 +1,3 @@
-/* Estilos básicos */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -6,7 +5,6 @@ body {
     background: linear-gradient(0deg, rgb(1, 172, 55) 0%, rgba(0,0,0,1) 97%);
 }
 
-/* Menú principal */
 #menu-principal {
     background-color: #8076a3;
     padding: 10px 0;
@@ -61,13 +59,12 @@ body {
     background-color: #1bb413;
 }
 
-/* Contenido principal */
 .contenidoprincipal{
-    width: 94%; /* Ajusta el ancho según necesites */
-    background-color: rgba(255, 255, 255, 0.6); /* Fondo transparente */
+    width: 94%;
+    background-color: rgba(255, 255, 255, 0.6); 
     padding: 10px;
-    border-radius: 6px; /* Bordes redondeados opcionales */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar el div */
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
 #contenido {
@@ -155,4 +152,16 @@ p {
     margin-left: 20px;
     font-style: italic;
     color: #fff;
+}
+.redes-sociales {
+    text-align: center;
+}
+.redes-sociales a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 40%;
+    display: inline-block;
+    background-color: gray;
 }

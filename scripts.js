@@ -7,18 +7,18 @@ document.addEventListener('DOMContentLoaded', () => {
 //aqui cargamos el menusito y submenus
 async function cargarMenu() {
     try {
-        // Cargar el archivo XML del menú principal
+        // Cargar XML del menusito
         const respuestaXML = await fetch('menu.xml');
         const textoXML = await respuestaXML.text();
         const parser = new DOMParser();
         const xmlDoc = parser.parseFromString(textoXML, 'application/xml');
 
-        // Cargar el archivo JSON de los submenús
+        // Cargar JSON de los submenús
         const respuestaJSON = await fetch('submenus.json');
         const datosSubmenus = await respuestaJSON.json();
 
         const menuContenedor = document.getElementById('menu');
-        menuContenedor.innerHTML = ''; // Asegurarse de vaciar el menú antes de generarlo
+        menuContenedor.innerHTML = '';
 
         xmlDoc.querySelectorAll('opcion').forEach((opcion) => {
             const nombreOpcionEs = opcion.querySelector('nombre').getAttribute('es');
@@ -30,7 +30,7 @@ async function cargarMenu() {
 
             const enlace = document.createElement('a');
             enlace.classList.add('nav-link', 'dropdown-toggle');
-            enlace.textContent = nombreOpcionEs; // Valor por defecto en español
+            enlace.textContent = nombreOpcionEs; //en español x defecto
             enlace.href = "#";
             enlace.setAttribute('data-bs-toggle', 'dropdown');
             enlace.setAttribute('aria-expanded', 'false');
@@ -39,7 +39,6 @@ async function cargarMenu() {
 
             li.appendChild(enlace);
 
-            // Verificar si hay submenús
             if (datosSubmenus[nombreOpcionEs] && datosSubmenus[nombreOpcionEs].length > 0) {
                 const ulSubmenu = document.createElement('ul');
                 ulSubmenu.classList.add('dropdown-menu');

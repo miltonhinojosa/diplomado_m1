@@ -42,9 +42,9 @@
         {"nombre": "Reportar problemas", "nombre_en": "Report problems", "enlace": "privacidad.html"}
     ],
     "Contacto": [
-        {"nombre": "Soporte técnico", "nombre_en": "Technical support", "enlace": "soporte.html"},
+        {"nombre": "Boletín informativo", "nombre_en": "Newsletter", "enlace": "soporte.html"},
         {"nombre": "Redes sociales", "nombre_en": "Social networks", "enlace": "soporte.html"},
         {"nombre": "Feedback", "nombre_en": "Feedback", "enlace": "soporte.html"},
-        {"nombre": "Boletín informativo", "nombre_en": "Newsletter", "enlace": "soporte.html"}
+        {"nombre": "Soporte técnico", "nombre_en": "Technical support", "enlace": "soporte.html"}
     ]
 }

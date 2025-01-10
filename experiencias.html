@@ -49,48 +49,47 @@
         <div class="row g-4">
             <div class="col-md-3 cajas p-3 mb-1">
                 <section class="height-auto">
-                    <h2>Foro de Hábitos de Ejercicio</h2>
+                    <h2 data-translate-key="foroTitulo">Foro de hábitos de Ejercicio</h2>
                     <form class="formulario-mensaje" onsubmit="agregarMensaje(event)">
                         <div class="mb-3 p-2 my-0">
-                            <label for="nombre" class="form-label">Nombre:</label>
+                            <label for="nombre" class="form-label" data-translate-key="nombreLabel">Nombre:</label>
                             <input class="form-control" type="text" id="autor" placeholder="Tu nombre" required>
                         </div>
                         <div class="mb-3 p-2">
-                            <label for="nombre" class="form-label">Mensaje:</label>
+                            <label for="mensaje" class="form-label" data-translate-key="mensajeLabel">Mensaje:</label>
                             <textarea class="form-control" id="contenido" placeholder="Tu mensaje sobre ejercicios" rows="4" required></textarea>
                         </div>
                         <div class="mb-3 p-2">
-                            <button class="btn btn-success" type="submit">Publicar Mensaje</button>
+                            <button class="btn btn-success" type="submit" data-translate-key="publicarBoton">Publicar Mensaje</button>
                         </div>
                     </form>
                 </section>
             </div>
             <div class="col-md-6 cajas p-3 mb-1">
                 <section>
-                    <h2 class="mb-1">Mensajes</h2>
-                    <div class="mensajes p-0" id="mensajes">
+                    <h2 class="mb-1" data-translate-key="mensajesTitulo">Mensajes</h2>
+                    <div class="mensajes p-0 mb-0" id="mensajes">
                         <div class="mensaje">
                             <p class="autor">Luis Fernando</p>
-                            <p class="contenido">¿Cuál es el mejor horario para hacer yoga si quiero mejorar mi flexibilidad?</p>
-                            <div class="respuesta">Respuesta mas votada: Por la mañana es ideal para empezar el día con energía.</div>
+                            <p class="contenido" data-translate-key="mensaje1">¿Cuál es el mejor horario para hacer yoga si quiero mejorar mi flexibilidad?</p>
+                            <div class="respuesta" data-translate-key="respuesta1">Respuesta mas votada: Por la mañana es ideal para empezar el día con energía.</div>
                         </div>
                         <div class="mensaje">
                             <p class="autor">Gabriela Choque</p>
-                            <p class="contenido">¿Cuántos días a la semana recomiendan nadar para mantenerse en forma?</p>
-                            <div class="respuesta">Respuesta mas votada: Tres días a la semana son perfectos para mantener un buen ritmo.</div>
+                            <p class="contenido" data-translate-key="mensaje2">¿Cuántos días a la semana recomiendan nadar para mantenerse en forma?</p>
+                            <div class="respuesta" data-translate-key="respuesta2">Respuesta mas votada: Tres días a la semana son perfectos para mantener un buen ritmo.</div>
                         </div>
                         <div class="mensaje">
                             <p class="autor">Carlos Huarachi</p>
-                            <p class="contenido">¿Es mejor correr en la mañana o en la noche para bajar de peso?</p>
-                            <div class="respuesta">Respuesta mas votada: Cualquier horario funciona mientras seas constante, pero en la mañana ayuda a activar el metabolismo.</div>
+                            <p class="contenido" data-translate-key="mensaje3">¿Es mejor correr en la mañana o en la noche para bajar de peso?</p>
+                            <div class="respuesta" data-translate-key="respuesta3">Respuesta mas votada: Cualquier horario funciona mientras seas constante, pero en la mañana ayuda a activar el metabolismo.</div>
                         </div>
                     </div>
                 </section>
-            </div>
+            </div>            
         </div>               
     </div>        
     <script>
-        // Función para agregar un mensaje nuevo
         function agregarMensaje(evento) {
             evento.preventDefault();
             
@@ -110,13 +109,11 @@
                 contenedorMensajes.appendChild(nuevoMensaje);
                 simularRespuesta(contenedorMensajes);
                 
-                // Limpiar campos
                 document.getElementById('autor').value = '';
                 document.getElementById('contenido').value = '';
             }
         }
 
-        // Función para simular una respuesta automática
         function simularRespuesta(contenedor) {
             const respuestas = [
                 "¡Muy buena pregunta! Creo que puedes empezar con lo que te sientas más cómodo.",
@@ -136,7 +133,7 @@
         }
     </script>
     <footer class="text-white text-center py-3" style="background-color: #067d00;">
-        <p class="mb-0 text-center">&copy; 2025 HABBiTOS FITNESS. Todos los derechos reservados.</p>
+        <p class="mb-0 text-center">&copy; 2025 HABBiTOS FITNESS. Todos los derechos reservados Dardo Milton Hinojosa.</p>
     </footer>
 </body>
 </html>
