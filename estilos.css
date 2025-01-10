@@ -109,6 +109,8 @@ h2 {
     padding: 10px;
     font-weight: 900;
     text-align: center;
+    background-color: #067d00;
+    border-radius: 6px;
 }
 p {
     color: #fff;
@@ -116,7 +118,7 @@ p {
     padding: 10px;
     text-align: justify;
 }
-/* Responsividad */
+/* para responsivo */
 @media (max-width: 768px) {
     #menu {
         flex-direction: column;
@@ -135,15 +137,22 @@ p {
         margin: 5px 0;
     }
 }
-/* CSS Code */
-.swiper-wrapper {
-    width: 100%;
-    height: max-content !important;
-    padding-bottom: 64px !important;
-    -webkit-transition-timing-function: linear !important;
-    transition-timing-function: linear !important;
-    position: relative;
+
+.mensajes {
+    margin-top: 20px;
 }
-.swiper-pagination-bullet {
-    background: #4f46e5;
+.mensaje {
+    border-bottom: 1px solid #fff;
+    padding: 10px 0;
+}
+.mensaje:last-child {
+    border-bottom: none;
+}
+.autor {
+    font-weight: bold;
+}
+.respuesta {
+    margin-left: 20px;
+    font-style: italic;
+    color: #fff;
 }
